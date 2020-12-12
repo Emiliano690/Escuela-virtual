@@ -1,0 +1,60 @@
+ <html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+</head>
+<body background="Imagenes\ImagenLetras.jpg">
+	<h1>Escuela Virtual Basica</h1>
+<div class="materias">
+	<h2>Ejercicio</h2>
+	<p>I- Ordena las palabras</p><br>
+	<form>
+	<label for="name1" class="materias_label">1- bebé mucho El duerme</label><br>
+	<input type="text" id="text1" name="name1" placeholder="Escribe las palabras"><br>
+	<label for="name1">2- niño sus juguetes juega El con</label><br>
+	<input type="text" id="text2" name="name1" placeholder="Escribe las palabras"><br>
+	<label for="name1">3- Cuando niños nacen los están pequenos muy</label><br>
+	<input type="text" id="text3" name="name1" placeholder="Escribe las palabras"><br>
+	<label for="name1">4- piso en el El bebé gatea</label><br>
+	<input type="text" id="text4" name="name1" placeholder="Escribe las palabras"><br>
+	<input type="submit" value="verificar" onclick="Verificar()">
+	<a href="Tutoriales.html">Volver</a>
+	</form>
+</div>
+<script>
+	function Verificar(){
+		var a=0;
+		var b=0;
+		var text1=document.getElementById("text1").value;
+		var text2=document.getElementById("text2").value;
+		var text3=document.getElementById("text3").value;
+		var text4=document.getElementById("text4").value;
+		
+		if (text1 == "el bebé duerme mucho" || text1 == "El bebé duerme mucho" || text1 == "EL BEBÉ DUERME MUCHO") {
+			a=a+1;
+			b=b+2.5;
+		};
+		if (text2 == "el niño juega con sus juguetes" || text2 == "EL NIÑO JUEGA CON SUS JUGUETES" || text2 == "El niño juega con sus juguetes") {
+			a=a+1;
+			b=b+2.5;
+		};
+		if (text3 == "cuando los niños nacen están muy pequeños" || text3 == "Cuando los niños nacen están muy pequeños" || text3 == "CUANDO LOS NIÑOS NACEN ESTÁN MUY PEQUEÑOS ") {
+			a=a+1;
+			b=b+2.5;
+		};
+		if (text4 == "el bebé gatea en el piso" || text4 == "El bebé gatea en el piso" || text4 == "EL BEBÉ GATEA EN EL PISO") {
+			a=a+1;
+			b=b+2.5;
+		};
+		if (a == 4) {
+			a
+		}else{
+			alert('Es incorrecto '+'Su calificacion es '+b);
+		};
+	}
+</script>
+</body>
+</html>

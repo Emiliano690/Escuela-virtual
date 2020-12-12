@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+</head>
+<body background="Imagenes\ImagenLetras.jpg">
+	<h1>Escuela Virtual Basica</h1>
+<div class="materias">
+	<h2>Ejercicio</h2>
+	<p>I- Ordena las silabas y forma la palabra correcta</p><br>
+	<form>
+	<label for="name1">1- ta-ra-gui</label><br>
+	<input type="text" id="text1" name="name1" placeholder="Escribe la palabra"><br>
+	<label for="name1">2- ti-pa-nes</label><br>
+	<input type="text" id="text2" name="name1" placeholder="Escribe la palabra"><br>
+	<label for="name1">3- pa-cam-na</label><br>
+	<input type="text" id="text3" name="name1" placeholder="Escribe la palabra"><br>
+	<label for="name1">4- gre-can-jo</label><br>
+	<input type="text" id="text4" name="name1" placeholder="Escribe la palabra"><br>
+	<input type="submit" value="verificar" onclick="Verificar()">
+	<a href="Tutoriales.html">Volver</a>
+	</form>
+</div>
+<script>
+	function Verificar(){
+		var a=0;
+		var text1=document.getElementById("text1").value;
+		var text2=document.getElementById("text2").value;
+		var text3=document.getElementById("text3").value;
+		var text4=document.getElementById("text4").value;
+		
+		if (text1 == "guitarra" || text1 == "Guitarra" || text1 == "GUITARRA") {
+			a=a+1;
+		};
+		if (text2 == "patines" || text2 == "Patines" || text2 == "PATINES") {
+			a=a+1;
+		};
+		if (text3 == "campana" || text3 == "Campana" || text3 || text3 == "CAMPANA") {
+			a=a+1;
+		};
+		if (text4 == "cangrejo" || text4 == "Cangrejo" || text4 == "CANGREJO") {
+			a=a+1;
+		};
+		if (a == 4) {
+			alert('es Correcto')
+		}else{
+			alert('es incorrecto')
+		};
+	}
+</script>
+</body>
+</html>
